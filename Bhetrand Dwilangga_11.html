@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bhetrand Dwilangga 11</Title>
+</head>
+<body>
+    <h2>
+    <script type"text/javascript">
+        var  major=prompt("What is your major?","");
+        while(true){
+    if(major=="IT"||major=="it"||major=="is"||major=="IS")
+    {
+        var attend=prompt("How many attend the class?","");
+        if(attend>=0 && attend<=15)
+        {
+            
+        var assignment1=prompt("Put your assignment 1 score","");
+        while(assignment1>100)
+        {
+        alert("Score out of range");
+        var assignment1=prompt("Put your assignment 1 score","");
+        continue;
+        }
+
+        var assignment2=prompt("Put your assignment 2 score","");
+        while(assignment2>100)
+        {
+        alert("Score out of range");
+        var assignment2=prompt("Put your assignment 2 score","");
+        continue;
+        }
+
+        var assignment3=prompt("Put your assignment 3 score","");
+        while(assignment3>100)
+        {
+        alert("Score out of range");
+        var assignment3=prompt("Put your assignment 3 score","");
+        continue;
+        }
+
+        var mid=prompt("Put your mid score","");
+        while(mid>100)
+        {
+        alert("Score out of range");
+        var mid=prompt("Put your mid score","");
+        continue;    
+        }
+
+        var final=prompt("Put your final score","");
+        while(final>100)
+        {
+        alert("Score out of range");
+        var final=prompt("Put your final score","");
+        continue;   
+        }
+        totalassignment=(Number(assignment1)+Number(assignment2)+Number(assignment3));
+        result=(0.2*(totalassignment/3)+0.3*Number(mid)+0.5*Number(final)+12);
+        
+        }
+        else
+        {
+        alert("Out of range!");
+        continue;
+        }      
+    }
+    if(major=="it"||major=="IT")
+    {
+        if(result >=85 )
+        {
+            grade="A";
+            if(attend<10)
+                grade="B";
+        }  
+        else if(result>=70 && result<85)
+        {
+            grade="B";
+        }
+        else if(result>=60 && result<70)
+        {
+            grade="C";
+        }
+        else if(result>=50 && result<60)
+        {
+            grade="D";
+        }
+        else
+        {
+            grade="E";
+        }
+    }
+    if(major=="is"||major=="IS")
+    {
+        if(result >=80 )
+        {
+            grade="A";
+            if(attend<10)
+                grade="B";
+        }  
+        else if(result>=65 && result<80)
+        {
+            grade="B";
+        }
+        else if(result>=55 && result<65)
+        {
+            grade="C";
+        }
+        else if(result>=45 && result<55)
+        {
+            grade="D";
+        }
+        else
+        {
+            grade="E";
+        }
+    } 
+        
+        result=Math.round(result);
+        document.write("<br>");
+        document.write("Total assignment = "+totalassignment+"<br>");
+        document.write("Your total score="+result+"<br>");
+        document.write("Your grade is="+grade+"<br>");
+        document.write("Your attendance="+attend+"<br>");
+
+        var answer=prompt("Next student?","");
+        if(answer!="yes")
+        {
+            break;
+        }
+        }
+    </script>
+    </h2>
+    </body>
+    </html>

@@ -1,0 +1,36 @@
+<html>
+  <head><title>Bhetrand Dwilangga_14</title>
+    <script type="text/javascript">
+      function and(){
+        var and1=prompt("Enter the first number","");
+        var and2=prompt("Enter the second number","");
+        result1=and1&and2;
+
+        document.writeln("The result is"+result1);
+      }
+      function or(){
+        var or1=prompt("Enter the first number","");
+        var or2=prompt("Enter the second number","");
+        var result2=or1|or2;
+
+        document.writeln("The result is"+result2);
+      }
+      function fahrenheit(){
+        var celcius=prompt("Put the celcius degree=","");
+        
+        fahrenheit=(9/5*Number(celcius)+32);
+
+        document.writeln("The fahrenheit is ="+fahrenheit);
+      }
+    </script>
+  </head>
+  <body>
+    <div align="center">
+    <form>
+      <input type="button" value="Fahrenheit" onClick="fahrenheit();"><br>
+      <input type="button" value="OR" onClick="or();"><br>
+      <input type="button" value="AND" onClick="and();">
+    </form>
+    </div>
+  </body>
+</html>

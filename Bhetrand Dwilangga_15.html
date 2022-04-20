@@ -1,0 +1,179 @@
+<html>
+  <head>
+    <title>Bhetrand Dwilangga 15</title>
+    <script type="text/javascript">
+      function student() {
+            this.name = prompt("Your name ");
+        this.address = prompt("Your address");
+        this.DoB = prompt("DoB");
+        this.PoB = prompt("PoB");
+      }
+      var profile = new student();
+      function output() {
+        document.write("Name :" + profile.name + "<br>");
+        document.write("Address :" + profile.address + "<br>");
+        document.write("Date of born :" + profile.DoB + "<br>");
+        document.write("Place of born :" + profile.PoB + "<br>");
+        document.write("Grade :" + grade + "<br>");
+      }
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      
+     
+        var major = prompt("Your major =", "");
+        if (major == "IT" || major=="it") {
+          var attend = prompt("The attended =", "");
+          while (attend > 15) {
+            var attend = prompt("The attended =", "");
+            if (attend > 15) {
+              continue;
+            }
+          }
+          var assignment1 = prompt("The score of assignment 1 =", "");
+          while (assignment1 > 100) {
+            var assignment1 = prompt("The score of assignment 1 =", "");
+            if (assignment1 > 100) {
+              continue;
+            }
+          }
+          var assignment2 = prompt("The score of assignment 2 =", "");
+          while (assignment2 > 100) {
+            var assignment2 = prompt("The score of assignment 2 =", "");
+            if (assignment2 > 100) {
+              continue;
+            }
+          }
+          var assignment3 = prompt("The score of assignment 3 =", "");
+          while (assignment3 > 100) {
+            var assignment3 = prompt("The score of assignment 3 =", "");
+            if (assignment3 > 100) {
+              continue;
+            }
+          }
+          var mid = prompt("The score of mid =", "");
+          while (mid > 100) {
+            var mid = prompt("The score of mid =", "");
+            if (mid > 100) {
+              continue;
+            }
+          }
+          var final = prompt("The score of final =", "");
+          while (final > 100) {
+            var final = prompt("The score of final =", "");
+            if (final > 100) {
+              continue;
+            }
+          }
+          total_assignmentIT =
+            Number(assignment1) + Number(assignment2) + Number(assignment3);
+          totalIT =
+            0.2 *
+              ((Number(assignment1) +
+                Number(assignment2) +
+                Number(assignment3)) /
+                3) +
+            0.3 * Number(mid) +
+            0.5 * Number(final) +
+            12;
+          
+          if (totalIT >= 85 && attend >= 10) {
+            grade = "A";
+          
+          } else if (attend < 10 && totalIT >= 85) {
+            grade = "B";
+            
+          } else if (totalIT < 85 && totalIT >= 70) {
+            grade = "B";
+            
+          } else if (totalIT < 70 && totalIT >= 60) {
+            grade = "C";
+           
+          } else if (totalIT < 60 && totalIT >= 55) {
+            grade = "D";
+            
+          } else if (totalIT < 55 || totalIS < 45) {
+            grade = "E";
+           
+          }
+        }
+        if (major == "IS" || major =="is ") {
+          var attend = prompt("The attended =", "");
+          while (attend > 15) {
+            var attend = prompt("The attended =", "");
+            if (attend > 15) {
+              continue;
+            }
+          }
+          var assignment4 = prompt("The score of assignment 1 =", "");
+          while (assignment4 > 100) {
+            var assignment4 = prompt("The score of assignment 1 =", "");
+            if (assignment4 > 100) {
+              continue;
+            }
+          }
+          var assignment5 = prompt("The score of assignment 2 =", "");
+          while (assignment5 > 100) {
+            var assignment5 = prompt("The score of assignment 2 =", "");
+            if (assignment5 > 100) {
+              continue;
+            }
+          }
+          var assignment6 = prompt("The score of assignment 3 =", "");
+          while (assignment6 > 100) {
+            var assignment6 = prompt("The score of assignment 3 =", "");
+            if (assignment6 > 100) {
+              continue;
+            }
+          }
+          var mid1 = prompt("The score of mid =", "");
+          while (mid1 > 100) {
+            var mid1 = prompt("The score of mid =", "");
+            if (mid1 > 100) {
+              continue;
+            }
+          }
+          var final2 = prompt("The score of final =", "");
+          while (final2 > 100) {
+            var final2 = prompt("The score of final =", "");
+            if (final2 > 100) {
+              continue;
+            }
+          }
+          total_assignmentIS =
+            Number(assignment4) + Number(assignment5) + Number(assignment6);
+          totalIS =
+            0.2 *
+              ((Number(assignment4) +
+                Number(assignment5) +
+                Number(assignment6)) /
+                3) +
+            0.3 * Number(mid1) +
+            0.5 * Number(final2) +
+            12;
+          if (totalIS >= 80 && attend >= 10) {
+            grade = "A";
+            
+          } else if (attend < 10 && totalIS >= 80) {
+            grade = "B";
+          
+          } else if (totalIS < 80 && totalIS >= 65) {
+            grade = "B";
+          
+          } else if (totalIS < 65 && totalIS >= 55) {
+            grade = "C";
+         
+          } else if (totalIS < 55 && totalIS >= 45) {
+            grade = "D";
+          
+          } else if (totalIS < 45) {
+            grade = "E";
+           
+          }
+        }
+        output();
+      
+    </script>
+  </body>
+</html>

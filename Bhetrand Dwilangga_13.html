@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bhetrand Dwilangga 13</Title>
+        <script type="text/javascript">
+        function funcsquare(panjang,lebar)
+        {
+            return panjang*lebar;
+
+        }
+        function functri(tinggi,alas)
+        {
+            return tinggi*alas/2;
+        }
+        </script>
+</head>
+<body>
+    <h2>
+    <script type"text/javascript">
+        var many=prompt("How many the area do u want to count","");
+        var i=1;
+      
+        var tot=0;
+        
+        for(i;i<=many;i++){
+        var what=prompt("Is it square or triangle","");
+
+        if(what=="square")
+        {
+            var length=prompt("The length?","");
+            var width=prompt("The widht?","");
+            var totsquare=funcsquare(length,width);
+            totsquare1=totsquare.toFixed(2);
+            totsquare1=parseFloat(totsquare1);
+            tot+=totsquare1;
+
+            document.writeln("Shape "+i+"="+totsquare1.toFixed(2)+"<br>");
+            
+            
+            continue;
+        }
+        else if(what=="triangle")
+        {
+            var base=prompt("The base?","");
+            var height=prompt("The height?","");
+            var tottri=functri(base,height);
+            tottri1=tottri.toFixed(2);
+            tottri1=parseFloat(tottri1);
+           
+            tot+=tottri1;
+            document.writeln("Shape"+i+"="+tottri1.toFixed(2)+"<br>");
+            
+            continue;
+            
+        }
+
+        }
+        document.write("total area : "+tot.toFixed(2));
+
+    </script>
+    </h2>
+    </body>
+    </html>

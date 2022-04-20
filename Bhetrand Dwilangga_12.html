@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bhetrand Dwilangga 12</Title>
+</head>
+<body>
+    <h2>
+    <script type"text/javascript">
+        var depth=prompt("How many depth you want to count?","");
+        var long,degree,cos,sin,verdep,totdep=0,totdis=0,distance;
+        totdep = parseFloat(totdep);
+        totdis = parseFloat(totdis);
+    
+        var i=1;
+        while(i<=depth)
+        {
+            long = prompt("Depth "+i);
+            degree = parseFloat(prompt("Angle "+i));
+            cos = parseFloat(Math.cos(degree*Math.PI/180));
+            sin = parseFloat(Math.sin(degree*Math.PI/180));
+
+            var verdep1 = parseFloat(cos*long);
+            verdep = verdep1.toFixed(2);
+            verdep = parseFloat(verdep);
+            totdep += verdep;
+            
+
+            var distance1 = parseFloat(sin*long);
+            distance = distance1.toFixed(2);
+            distance = parseFloat(distance);
+            totdis += distance;
+
+            document.write("</br>"+"Depth "+i+" : "+long+" meters");
+            document.write("</br>"+"Angle "+i+" : "+degree+" degree");
+            document.write("</br>"+"Vertical Depth "+i+" : "+verdep+" meters");
+            document.write("</br>");
+            i++;
+        }
+        document.write("</br>");
+        document.write("Total Vertical Depth: "+totdep.toFixed(2)+" meters");
+        document.write("</br>"+"Total Distance: "+totdis.toFixed(2)+" meters");
+    </script>
+    
+    
+    </script>
+    </h2>
+    </body>
+    </html>

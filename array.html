@@ -1,0 +1,61 @@
+<script type="text/javascript">
+    var i=0;
+    var timeout;
+    function preLoadImages(){
+      if(document.images){
+        pict = new Array(); 
+        pict[0]=new Image();
+        pict[0]="1.png";
+        pict[1]=new Image();
+        pict[1]="1.png";
+        pict[2]=new Image();
+        pict[2]="3.png";
+        pict[3]=new Image();
+        pict[3]="4.png";
+        pict[4]=new Image();
+        pict[4]="5.png";
+        pict[5]=new Image();
+        pict[5]="6.png";
+        pict[6]=new Image();
+        pict[6]="7.png";
+        pict[7]=new Image();
+        pict[7]="8.png";
+        pict[8]=new Image();
+        pict[8]="9.png";
+        pict[9]=new Image();
+        pict[9]="10.png";
+      }
+      else{
+        alert("no picture");
+      }
+    }
+
+    function startSlide(){
+if(i < pict.length){
+  document.images["pictures"].src = pict[i];
+  i++;
+}
+else
+{
+  i=0;
+  document.images["pictures"].src = pict[i];
+}
+timeout = setTimeout('startSlide()',400);
+}
+
+</script>
+<style type="text/css">
+
+body
+{
+    background-color:pink;
+}
+</style>
+
+<body  onload="preLoadImages(),startSlide()" >
+<img  name="pictures" src="1.png" height="500px" width="300px"  />
+<form>
+  <br /><br />
+ 
+</form>
+</body>

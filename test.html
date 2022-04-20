@@ -1,0 +1,23 @@
+
+    <script type="text/javascript">
+    var major=prompt("What is your major?","");
+    if(major=="IT" || major=="IS")
+    {
+        var assignment1=prompt("Put your assignment 1 score","");
+        var assignment2=prompt("Put your assignment 2 score","");
+        var assignment3=prompt("Put your assignment 3 score","");
+        var mid=prompt("Put your mid score","");
+        var final=prompt("Put your final score","");
+
+        totalassignment=(Number(assignment1)+Number(assignment2)+Number(assignment3));
+        document.writeln("Total Assignment="+totalassignment); 
+        
+        result=(0.2*(totalassignment/3)+0.3*Number(mid)+0.5*Number(final)+12);
+        document.writeln("</br>Your grade is="+result);
+        
+    }
+    
+    </script>
+    </h2>
+    </body>
+    </html>

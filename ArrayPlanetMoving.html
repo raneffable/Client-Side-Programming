@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Array Planet Moving</title>
+       <script type="text/javascript">
+            var i=0;
+            var timeout;
+            function preLoadImages(){
+              if(document.images){
+                planet = new Array(); // global variable
+                planet[0]=new Image();
+                planet[0]="venus.jpg";
+                planet[1]=new Image();
+                planet[1]="neptune.jpg";
+                planet[2]=new Image();
+                planet[2]="earth.jpg";
+                planet[3]=new Image();
+                planet[3]="mars.jpg";
+                planet[4]=new Image();
+                planet[4]="jupiter.jpg";
+              }
+              else{
+                alert("no picture");
+              }
+            }
+
+            function startSlide(){
+        if(i < planet.length){
+          document.images["planet_pictures"].src = planet[i];
+          i++;
+        }
+        else
+        {
+          i=0;
+          document.images["planet_pictures"].src = planet[i];
+        }
+        timeout = setTimeout('startSlide()',150);
+       }
+
+            function STOPSlideShow(){
+        clearTimeout(timeout);
+      }
+    </script>
+    </head>
+    <body bgColor="black" onload = "preLoadImages()">
+        <img name="planet_pictures" src="venus.jpg" height="300"
+             width="300px" />
+        <form>
+          <br /><br />
+          <input type=button value="START"
+                 onClick="return startSlide();"/>
+          <input type=button value="STOP"
+                 onClick="return STOPSlideShow();"/>
+        </form>
+      </body>
+    
+</html>

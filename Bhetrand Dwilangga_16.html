@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bhetrand Dwilangga_16</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+     
+      var Arr_mid = new Array();
+      var Arr_name = new Array();
+      var Arr_final = new Array();
+      var Arr_assign = new Array();
+      var StudentPts = new Array();
+      var count = 0;
+      var add = 0;
+      while (true) {
+        
+        var n= prompt("How many student");
+
+      
+        for (var i = 0; i < n; i++) {
+          Arr_name[i + add] = prompt("Name " + (i + 1));
+          count++;
+        }
+        
+        for (var i = 0; i < n; i++) {
+          Arr_mid[i + add] = prompt("Mid" + (i + 1));
+        }
+       
+        for (var i = 0; i < n; i++) {
+          Arr_final[i + add] = prompt("Final" + (i + 1));
+        }
+      
+        for (var i = 0; i < n; i++) {
+          Arr_assign[i + add] = prompt("Assignment" + (i + 1));
+        }
+        for (var i = 0; i < n; i++) {
+          StudentPts[i + add] = 0.3 * Arr_mid[i] + 0.5 * Arr_final[i] + 0.2 * Arr_assign[i];
+        }
+        add = count;
+     
+        var conf = prompt("Wanna use again");
+        if (conf == "yes") 
+        {
+          continue;
+        } 
+        else 
+        {
+          for (var i = 0; i < count; i++) {
+            document.write(Arr_name[i] + ",");
+          }
+          document.write("<br>");
+
+          for (var i = 0; i < count; i++) {
+            document.write(Arr_mid[i] + ",");
+          }
+          document.write("<br>");
+
+          for (var i = 0; i < count; i++) {
+            document.write(Arr_final[i] + ",");
+          }
+          document.write("<br>");
+
+          for (var i = 0; i < count; i++) {
+            document.write(Arr_assign[i] + ",");
+          }
+          document.write("<br>");
+
+          for (var i = 0; i < count; i++) {
+            document.write(StudentPts[i] + ",");
+          }
+
+          document.write("<br>");
+          document.write("<br>");
+          document.write("<br>");
+
+          for (var i = 0; i < count; i++) 
+          {
+            document.write(Arr_name[i] +"," +Arr_mid[i] +"," +Arr_final[i] +"," +Arr_assign[i] +"," +StudentPts[i] +"<br>" );
+          }
+          break;
+        }
+      }
+    </script>
+  </body>
+</html>

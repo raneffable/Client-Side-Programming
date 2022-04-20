@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bhetrand Dwilangga 9</Title>
+</head>
+<body>
+    <h2>
+    <script type"text/javascript">
+    var html1=prompt("html4=1,html5=2,html6=3,html7=4","");
+    html =parseInt(html1);
+    switch(html)
+    {
+        case 1: var major=prompt("What is your major?","");
+        if(major=="IT" || major=="IS")
+    {
+        var assignment1=prompt("Put your assignment 1 score","");
+        var assignment2=prompt("Put your assignment 2 score","");
+        var assignment3=prompt("Put your assignment 3 score","");
+        var mid=prompt("Put your mid score","");
+        var final=prompt("Put your final score","");
+
+        totalassignment=(Number(assignment1)+Number(assignment2)+Number(assignment3));
+        document.writeln("Total Assignment="+totalassignment); 
+        
+        result=(0.2*(totalassignment/3)+0.3*Number(mid)+0.5*Number(final)+12);
+        document.writeln("</br>Your grade is="+result);
+            
+    }
+        break;
+
+        case 2:var num1=prompt("Enter the first number","");
+        var num2=prompt("Enter the second number","");
+        result=num1&num2;
+
+        document.writeln("The result is"+result);
+        break;
+
+        case 3: var num1=prompt("Enter the first number","");
+        var num2=prompt("Enter the second number","");
+        result=num1|num2;
+
+        document.writeln("The result is"+result);
+        break;
+
+        case 4:var celcius=prompt("Put the celcius degree=","");
+        
+        fahrenheit=(9/5*Number(celcius)+32);
+
+        document.writeln("The fahrenheit is ="+fahrenheit);
+        break;
+    }
+    </script>
+    </h2>
+    </body>
+    </html>

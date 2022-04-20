@@ -1,0 +1,89 @@
+<style type="text/css">
+    
+    html, body 
+    {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color:deeppink;
+    }
+        
+        
+    </style>
+<script type="text/javascript">
+var costpackage=0;
+var costpieces=0;
+var totalcost=0;
+while(true)
+{
+var donate=prompt("Do you want to buy Package/Pieces?","Type Package/Pieces");
+
+
+if(donate=="package" || donate == "Package")
+{
+    var package=prompt("Which Packet do you want to buy?","Type 1 for packet 1 or 2 for packet 2  or 3 for packet 3");
+    if(package=="1")
+    {
+        var costpackage = costpackage+300000;
+        document.writeln("<br>You bought Package 1 -> Cost = 300.000");
+       
+    }
+    else if(package=="2")
+    {
+        var costpackage = costpackage+500000;
+        document.writeln("<br>You bought Package 2 -> Cost = 500.000");
+    }
+    else if(package=="3")
+    {
+        var costpackage = costpackage+1000000;
+        document.writeln("<br>You bought Package 3 -> Cost = 1.000.000");
+    }
+
+}
+if(donate=="pieces" || donate=="Pieces" )
+{
+    var pieces=prompt("Which one do you want to buy ? ","Type 1 for RingOfTrauma or 2 for MaxTitle or 3 MaxTier or 4 for SetAccesories");
+    if(pieces=="1")
+    {
+        var costpieces=costpieces+50000;
+        document.writeln("<br>You bought Ring of Trauma ->Cost=50.000")
+    }
+    if(pieces=="2")
+    {
+        var costpieces=costpieces+100000;
+        document.writeln("<br>You bought Max Title ->Cost=100.000")
+    }
+    if(pieces=="3")
+    {
+        var costpieces=costpieces+150000;
+        document.writeln("<br>You bought Max Tier ->Cost=150.000")
+    }
+    if(pieces=="4")
+    {
+        var costpieces=costpieces+200000;
+        document.writeln("<br>You bought Set Accesories ->Cost=200.000")
+    }
+
+}
+
+    
+    totalcost=costpackage+costpieces;
+   
+
+    var answer=prompt("Wanna Donate More?","");
+        if(answer!="yes")
+        {
+            break;
+        }
+}
+document.writeln("<br><br>Total cost = "+totalcost);
+
+    
+
+
+</script>
+<body style="background: url(wallpaper9.jpg) no-repeat center center;background-size:100% 100%; padding: 100px ; margin:-10px;" >
+    <br>
+    <br>
+    Note : You Can Pay to my own account BCA : 0987654321
+    <br><br>
+           Send your Proof of Transaction to my WA : 0821987654321 
+</body>

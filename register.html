@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+
+function send(){
+    if(confirm("Register the ID ? "))
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+}
+</script>
+
+<style type="text/css">
+
+b
+{
+    color:white;
+}
+h1
+{
+    color:whitesmoke;
+}
+.register
+{ 
+  background-color:peachpuff;
+  color:hotpink;
+  padding: 16px 20px;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+input[type=text], input[type=password] , input[type=email] ,input[type=number] {
+  width: 10%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background:pink;
+}
+
+input[type=text]:focus, input[type=password]:focus ,input[type=email]:focus ,input[type=number]:focus{
+  background-color:silver    ;
+  outline: none;
+}
+</style>
+<form action="register.php" method="post" style="background: url(wallpaper.jpg) no-repeat center center;background-size:100% 100%; padding: 100px ; margin:-10px;">
+    <center><h1>Register Form</h1>
+    <label><b>ID Register</b></label></br>
+    <input   name="login" value="" type="text" placeholder="Enter your ID ">
+    <label><br><b>Pin</b></label></br>
+    <input   name="pin" value="" type="number" placeholder="Enter the Pin ">
+    <label><br><b>Email</b></label></br>
+    <input   name="email" value="" type="email" placeholder="Enter your Email">
+    <label><br><b>No.Phone</b></label></br>
+    <input   name="phone" value="" type="text" placeholder="Enter your Phone">
+    <label><br><b>Address</b></label></br>
+    <input   name="address" value="" type="text" placeholder="Enter your Address">
+    <label><br><b>Set Password</b></label></br>
+    <input   name="password" value="" type="password" placeholder="Enter your Password">
+    <label><br><b>Repeat Password</b></label></br>
+    <input   name="repassword" value="" type="password" placeholder="Repeat your Password">
+    </center>
+    <center>
+        <input type="submit" class="register" value="Register ID "  onClick="send();" />>
+       
+    </center>
+</form>
+

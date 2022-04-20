@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bhetrand Dwilangga MidExam</Title>
+        <script type="text/javascript">
+        function dist(kec,waktu)
+        {
+            return kec*waktu;
+        }
+    </script>
+    </head>
+<body>
+    
+    <script type="text/javascript">
+
+        var totdistance=0;
+        var totaltitude=0;
+        var totall=0;
+        totdistance=parseFloat(totdistance);
+        totaltitude=parseFloat(totaltitude);
+        totall=parseFloat(totall);
+        i=0;
+        
+        while(true)
+        {
+            i++;
+         var speed=prompt("Speed" +i);
+         while(speed<0)
+         {
+         alert("Please enter positive number");
+         speed=prompt("Speed : ","");
+         continue;
+         }
+         if(speed==0)
+         {
+             break;
+         }
+   
+            var time=prompt("Time "+i);
+        while(time<0)
+        {
+         alert("Please enter positive number");
+         time=prompt("Time : ","");
+         continue;
+        }
+        if(time==0)
+        {
+            break;
+        }
+            var inclination=parseFloat(prompt("Inclination " +i));
+
+
+            var sin=parseFloat(Math.sin(inclination*Math.PI/180));
+
+            distance1=(dist(speed,time));
+            distance=distance1.toFixed(2);
+            distance=parseFloat(distance);
+
+            
+            
+
+            var altitude1 = parseFloat(sin*distance1);
+            altitude = altitude1.toFixed(2);
+            altitude = parseFloat(altitude);
+
+            totaltitude += altitude;
+            totdistance+=distance;
+
+            totall+=totaltitude;
+
+
+       document.write("</br>"+"Speed" +i+ ":" + speed+"meters");
+       document.write("</br>"+" Time" +i+":"+time+"second");
+       document.write("</br>"+"Inclination"+i+":"+inclination+"degree");
+      document.write("</br>"+"Distance"+i+":"+distance.toFixed(2));
+      document.write("</br>"+"Total Altitude : "+totaltitude);  
+         document.write("<br>");
+
+        }  
+       document.write("</br>"+"Total Distance : " +totdistance.toFixed(2));
+       document.write("</br>"+"Total Horizontal Distance : "+totall);
+       
+
+       
+        
+
+    </script>
+    
+    
+
+    
+    </body>
+    </html>

@@ -1,0 +1,54 @@
+<script type="text/javascript">
+
+    function send(){
+        if(confirm("Submit the suggestion ? "))
+        {
+          return true;
+        }
+        else
+        {
+          return false;
+        }
+    }
+    </script>
+<style type="text/css">
+    
+    html, body 
+    {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color:deeppink;
+    }
+    .submit
+{ 
+  background-color:peachpuff;
+  color:hotpink;
+  padding: 16px 20px;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+  
+    </style>
+
+
+
+<body style="background: url(wallpaper10.jpg) no-repeat center center;background-size:100% 100%; padding: 100px ; margin:-10px;" >
+
+
+    </body>
+ 
+    <form name="suggestionbox" action="suggestion.php" method="post">
+      <h2>Suggestion Box</h2>
+      
+        <textarea name="suggest"cols="80"rows="5"placeholder="Type your suggestion here"></textarea>
+    
+         <br><br>
+
+        <input type="submit" class="submit" value="Submit"  onClick="send();" />>
+    
+    </form> 
+  </div>
+
+  
